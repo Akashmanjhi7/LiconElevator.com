@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <header class="backdrop-blur-lg">
+    <header class="backdrop-blur-lg sticky top-0 bg-white  w-full z-50">
   <div class="mx-auto max-w-screen-xl px-4 sm:px-0 ">
     <div class="flex h-16 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">

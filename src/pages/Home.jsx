@@ -1,10 +1,12 @@
 import React from 'react'
 import Carasoule from '../components/utils/Carasoule'
 import Button from '../components/utils/Button'
+import Gallery from '../components/utils/Gallery'
 
 
 
 const Home = () => {
+     document.title='Licon Elevator'
   return (
     <>   <Carasoule/>
     <section className='max-w-screen-xl mx-auto min-h-screen flex items-center justify-between '>
@@ -25,6 +27,35 @@ const Home = () => {
             <Button text="Our Company" link="/about" />
 
         </div>
+    </section>
+
+    <section className='gallery mt-8'>
+    <Gallery 
+        flex="flex-row" 
+        heading="We created an industry and changed the world" 
+        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
+        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        />
+
+<Gallery 
+        flex="flex-row-reverse" 
+        heading="We created an industry and changed the world" 
+        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
+        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        />
+         <Gallery 
+        flex="flex-row" 
+        heading="We created an industry and changed the world" 
+        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
+        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        />
+         <Gallery 
+        flex="flex-row-reverse" 
+        heading="We created an industry and changed the world" 
+        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
+        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        />
+        
     </section>
     </>
 

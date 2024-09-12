@@ -9,19 +9,19 @@ const Home = () => {
      document.title='Licon Elevator'
   return (
     <>   <Carasoule/>
-    <section className='max-w-screen-xl mx-auto min-h-screen flex items-center justify-between '>
+    <section className='max-w-screen-xl mx-auto min-h-screen flex sm:flex-row flex-col items-center sm:justify-between '>
 
 {/* map */}
-        <div className='map text-pink-300 w-1/2'>
-            <img src="/images/india.svg" alt="" className='p-20' />
+        <div className='map sm:w-1/2 mt-6 sm:mt-0 '>
+            <img src="/images/india.svg" alt="" className='sm:p-20 px-4' />
         </div>
 {/* content */}
-        <div className='content-box w-1/2 '>
+        <div className='content-box sm:w-1/2  px-3 sm:px-0 '>
                 <div className='content flex flex-col gap-4 mb-6'>
 
               
-            <h1 className='text-[2vw] font-bold text-highlight'>We are the India's leading company for elevator and escalator manufacturing, installation and service</h1>
-            <p className='text-[1.4vw]'>We move 30 million people a day and we maintain ~1 million customer units worldwide - the world's largest portfolio. We can be found in many of the world's most recognizable buildings as well as the busiest transportation hubs and retail centers. We are everywhere people are on the move.</p>
+            <h1 className='sm:text-[2vw] text-[3vh] leading-none  font-bold text-highlight'>We are the India's leading company for elevator and escalator manufacturing, installation and service</h1>
+            <p className='sm:text-[1.4vw] text-[2vh] '>We move 30 million people a day and we maintain ~1 million customer units worldwide - the world's largest portfolio. We can be found in many of the world's most recognizable buildings as well as the busiest transportation hubs and retail centers. We are everywhere people are on the move.</p>
             </div>
 
             <Button text="Our Company" link="/about" />
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
     </section>
 
-    <section className='gallery mt-8'>
+    <section className='gallery mt-8 px-3 sm:px-0'>
     <Gallery 
         flex="flex-row" 
         heading="We created an industry and changed the world" 

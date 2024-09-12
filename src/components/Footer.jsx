@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className=" max-w-screen-xl mx-auto lg:grid lg:grid-cols-5 mt-8">
-  <div className="relative block h-32 lg:col-span-2 lg:h-full">
+    <footer className=" max-w-screen-xl mx-auto lg:grid lg:grid-cols-5 mt-8  sm:h-96 ">
+  <div className="relative block h-32 lg:col-span-2 sm:h-96 w-full ">
     <img
       src="https://images.unsplash.com/photo-1470075801209-17f9ec0cada6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG9mZmljZSUyMGJ1bGRpbmd8ZW58MHx8MHx8fDA%3D"
       alt=""
@@ -12,7 +12,7 @@ const Footer = () => {
     />
   </div>
 
-  <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+  <div className="px-4 py-4 sm:px-6 lg:col-span-3 lg:px-8">
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
       <div>
         <p>

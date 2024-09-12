@@ -33,7 +33,11 @@ const Contact = () => {
 {/* scroll image */}
 <div className="relative bg-cover bg-center h-96">
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative flex items-center justify-center h-full" style={{}}>
+        <div className="relative flex items-center justify-center h-full" style={{
+          backgroundImage: 'linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.3)),url(https://images.unsplash.com/photo-1661438086338-38ba330de1b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}>
             <div className="text-center text-white p-8">
                 <h2 className="text-3xl font-bold mb-4">Join Us Today!</h2>
                 <p className="mb-6">Get exclusive access to our latest updates and offers.</p>
@@ -43,7 +47,7 @@ const Contact = () => {
     </div>   
 
     {/* form section  start*/}  
-      <div className="flex justify-center items-center w-screen h-screen bg-white">
+      <div className="flex justify-center items-center w-full min-h-screen ">
 
 	<div className="container mx-auto my-4 px-4 lg:px-20">
 
@@ -76,7 +80,7 @@ const Contact = () => {
 				className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-highlight rounded-2xl">
 				<div className="flex flex-col text-white">
 					<h1 className="font-bold uppercase text-4xl my-4">Drop in our office</h1>
-					<p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+					<p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
 						tincidunt arcu diam,
 						eu feugiat felis fermentum id. Curabitur vitae nibh viverra, auctor turpis sed, scelerisque ex.
 					</p>
@@ -87,7 +91,7 @@ const Contact = () => {
             </div>
             <div className="flex flex-col">
               <h2 className="text-2xl">Main Office</h2>
-              <p className="text-gray-400">5555 Tailwind RD, Pleasant Grove, UT 73533</p>
+              <p className="">5555 Tailwind RD, Pleasant Grove, UT 73533</p>
             </div>
           </div>
           
@@ -97,18 +101,19 @@ const Contact = () => {
             </div>
             <div className="flex flex-col">
               <h2 className="text-2xl">Call Us</h2>
-              <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
-              <p className="text-gray-400">Fax: xxx-xxx-xxx</p>
+              <p className="">Tel: xxx-xxx-xxx</p>
+              <p className="">Fax: xxx-xxx-xxx</p>
             </div>
           </div>
           
-          <div className="flex my-4 w-2/3 lg:w-1/2">
-            <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full bg-red-400 h-8 w-8 inline-block mx-1 text-center pt-1">
+          <div className="flex my-4 w-2/3 lg:w-1/2 gap-2">
+            <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full  h-8 w-8  flex justify-center items-center   text-center">
             <FaFacebook />
             </a>
-            <a href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer" className="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1">
-              <i className="fab fa-linkedin-in text-blue-900" />
+            <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full  h-8 w-8  flex justify-center items-center   text-center">
+            <FaFacebook />
             </a>
+            
           </div>
         </div>
       </div>

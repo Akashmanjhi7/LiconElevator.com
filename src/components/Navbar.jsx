@@ -7,7 +7,7 @@ const Navbar = () => {
   <div class="mx-auto max-w-screen-xl px-4 sm:px-0 ">
     <div class="flex h-16 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">
-        <h1 className='font-bold text-[2vw] uppercase'>Licon Elevator</h1>
+        <h1 className='font-bold text-[2vw] uppercase text-highlight'>Licon Elevator</h1>
       </div>
 
       <div class="md:flex md:items-center md:gap-12">

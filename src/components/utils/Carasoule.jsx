@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const Carasoule = () => {
    
   return (
-    <div className="h-[91vh] w-full relative">
+    <div className="h-[91vh] w-full relative text-white">
     <Carousel>
       <div className="relative">
         <img
@@ -13,7 +13,7 @@ const Carasoule = () => {
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/50"></div>
       </div>
       <div className="relative">
         <img
@@ -22,7 +22,7 @@ const Carasoule = () => {
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/50"></div>
       </div>
       <div className="relative">
         <img
@@ -31,7 +31,7 @@ const Carasoule = () => {
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/50"></div>
       </div>
       <div className="relative">
         <img
@@ -40,7 +40,7 @@ const Carasoule = () => {
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/50"></div>
       </div>
       <div className="relative">
         <img
@@ -49,9 +49,15 @@ const Carasoule = () => {
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/50"></div>
       </div>
     </Carousel>
+    <div className='absolute top-[10%] left-[10%] border-t-4 border-b-4 px-10 border-white text-[2.6vw] font-black py-28'> 
+      <h1>Welcome to <span className='text-highlight'> Licon Elevator</span></h1>
+      <h1>We are Elevator manufacturer</h1>
+      <h1> Design-Installation-Maintenance</h1>
+      <h1>With 24×7 Support</h1>
+    </div>
   </div>
   
   )

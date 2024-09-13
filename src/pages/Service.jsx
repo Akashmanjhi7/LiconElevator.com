@@ -10,37 +10,37 @@ const [data, setData] = useState([
     "id": 1,
     "heading": "Elevator Installation",
     "image": "/service/install.jpg",
-    "summary": "Professional elevator installation services for residential and commercial buildings."
+    "summary": "Reliable elevator installation services that enhance safety, efficiency, and modern design in every building."
   },
   {
     "id": 2,
     "heading": "Elevator Maintenance",
     "image": "/service/ElevatorMaintenance.jpeg",
-    "summary": "Comprehensive maintenance plans to keep your elevators running smoothly and efficiently."
+    "summary": "Our expert elevator maintenance ensures smooth, safe operation with minimal downtime."
   },
   {
     "id": 3,
     "heading": "Elevator Modernization",
     "image": "/service/Elevator-Modernization.jpeg",
-    "summary": "Upgrade your existing elevators with the latest technology to improve performance and safety."
+    "summary": "Modernize your elevators for better efficiency and reliability with our professional services."
   },
   {
     "id": 4,
     "heading": "Emergency Repair Services",
     "image": "/service/Emergency-Repair-Services.jpeg",
-    "summary": "24/7 emergency repair services to quickly fix any elevator breakdowns and minimize downtime."
+    "summary": "Fast, expert elevator repairs available 24/7 to ensure safety and minimize downtime."
   },
   {
     "id": 5,
     "heading": "Elevator Inspection",
     "image": "/service/Elevator-Inspection.jpeg",
-    "summary": "Regular inspections to ensure compliance with safety standards and prevent potential issues."
+    "summary": "Ensure elevator safety with our detailed inspection services. Reliable checks for optimal performance"
   },
   {
     "id": 6,
     "heading": "Custom Elevator Solutions",
     "image": "/service/Elevator-Solutions.jpeg",
-    "summary": "Tailored elevator solutions to meet unique building requirements and design preferences."
+    "summary": "Custom elevator solutions designed for optimal performance, safety, and aesthetic integration in any building."
   }
 ]
 )
@@ -49,32 +49,32 @@ const [elevators, setelevators] = useState(
   [
     {
       "type": "Passenger Elevators",
-      "description": "We have substantial experience in elevator world & IOT's support, including Passenger elevator for different building types. Be it residential or commercial property passenger elevators are customized with various elevator shaft sizes.",
+      "description": "With modern passenger elevators, enjoy reliable and quiet movement between levels, ensuring safety, accessibility, and a touch of elegance in every ride.",
       "image": "/service/persnol.jpeg"
     },
     {
       "type": "Home Elevators",
-      "description": "Our elevators are fully customizable according to your requirements and can be easily fitted even in narrow shaft spaces to make movement across floors within your home a breeze.",
+      "description": "Transform your home with our elegant elevators, offering easy floor-to-floor access and adding both value and accessibility to your home.",
       "image": "/service/home.jpeg"
     },
     {
       "type": "Goods Elevators",
-      "description": "Specially designed for various industrial applications, these lifts are renowned for optimum performance and minimal maintenance. Liftshaft as well as for voluminous material, fitted with shutters for safety.",
+      "description": "Streamline your operations with our advanced goods elevators. Built for strength and efficiency, they enhance workflow and manage large loads effortlessly.",
       "image": "/service/goods.jpg"
     },
     {
       "type": "Observation Elevators",
-      "description": "The harmony of advanced technology, unique design & sophisticated atmosphere. Observation elevator enriches the moving experience with speimagecular views & a comfortable ambience.",
+      "description": "Observation elevators offer stunning panoramic views from high vantage points, enhancing your experience with breathtaking landscapes and cityscapes as you ascend.",
       "image": "/service/observation.jpg"
     },
     {
       "type": "Automobile Elevators",
-      "description": "Automobile elevators are widely being utilized by Architects and Developers to create flexible and luxurious parking designs. It is designed to facilitate ease of maintenance, cost effective.",
+      "description": "Revolutionize your parking experience with automobile elevators, which offer smooth and quick transportation of vehicles between floors in high-density areas.",
       "image": "/service/auto.jpg"
     },
     {
       "type": "Stretcher Elevators",
-      "description": "Specifically designed for healthcare, retirement and spa facilities, Escon's Cura bed elevator is reliable, durable and attractive. It’s also spacious enough to hold both patients and equipment.",
+      "description": "Stretcher elevators are designed for easy transport of patients in medical facilities, ensuring smooth, safe, and efficient movement between floors for critical care needs.",
       "image": "/service/strech.jpg"
     },
     

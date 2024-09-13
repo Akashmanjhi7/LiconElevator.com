@@ -1,62 +1,113 @@
-import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleToggle = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <header className="backdrop-blur-lg sticky top-0 bg-white  w-full z-50">
-  <div className="mx-auto max-w-screen-xl px-4 sm:px-0 ">
-    <div className="flex h-16 items-center justify-between">
-      <div className="flex-1 md:flex md:items-center md:gap-12">
-        <h1 className='font-black sm:text-[2vw] text-[2vh] uppercase text-highlight'>Licon Elevator</h1>
-      </div>
+    <header className="backdrop-blur-lg sticky top-0 bg-white w-full z-50">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-0">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex-1 md:flex md:items-center md:gap-12">
+            <h1 className='font-black sm:text-[2vw] text-[2vh] uppercase text-highlight'>
+              Licon Elevator
+            </h1>
+          </div>
 
-      <div className="md:flex md:items-center md:gap-12">
-        <nav aria-label="Global" className="hidden md:block">
-          <ul className="flex items-center gap-12 text-lg">
-            <li>
-              <NavLink className="" to="/"> Home </NavLink>
-            </li>
+          <div className="md:flex md:items-center md:gap-12">
+            {/* Desktop Menu */}
+            <nav aria-label="Global" className="hidden md:block">
+              <ul className="flex items-center gap-12 text-lg">
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `relative group hover:text-highlight ${isActive ? 'text-highlight underline-active' : ''}`
+                    }
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+                </li>
 
-            <li>
-              <NavLink className="" to="/about"> About </NavLink>
-            </li>
+                {["about", "service", "contact"].map((navitem, idex) => (
+                  <li key={idex} className='capitalize'>
+                    <NavLink
+                      className={({ isActive }) =>
+                        `relative group hover:text-highlight ${isActive ? 'text-highlight underline-active' : ''}`
+                      }
+                      to={`/${navitem}`}
+                    >
+                      {navitem}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-           
-
-            <li>
-              <NavLink className="" to="/service"> Services </NavLink>
-            </li>
-
-            <li>
-              <NavLink className="" to="/contact"> Contact</NavLink>
-            </li>
-
-            
-          </ul>
-        </nav>
-
-       
-
-          <div className="block md:hidden">
-            <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="size-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
+            {/* Mobile Menu Toggle Button */}
+            <div className="block md:hidden">
+              <button
+                className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                onClick={handleToggle}
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Menu with Slide Animation */}
+        <div
+          className={`md:hidden z-0 fixed right-0  bg-white px-10 py-8 transition-transform duration-300 overflow-x-hidden rounded-md transform ${
+            isMobileMenuOpen ? 'translate-x-0 ' : 'translate-x-[200%] '
+          }`}
+        >
+          <nav aria-label="Global">
+            <ul className="flex flex-col items-center gap-4 text-lg">
+              <li>
+                <NavLink
+                  className={({ isActive }) =>
+                    `relative group hover:text-highlight ${isActive ? 'text-highlight underline-active' : ''}`
+                  }
+                  to="/"
+                  onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                >
+                  Home
+                </NavLink>
+              </li>
+
+              {["about", "service", "contact"].map((navitem, idex) => (
+                <li key={idex} className='capitalize'>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `relative group hover:text-highlight ${isActive ? 'text-highlight underline-active' : ''}`
+                    }
+                    to={`/${navitem}`}
+                    onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                  >
+                    {navitem}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
+    </header>
+  );
+};
 
-</header>
-  )
-}
-
-export default Navbar
+export default Navbar;

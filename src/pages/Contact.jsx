@@ -12,17 +12,17 @@ const Contact = () => {
                
                 <div className="bg-white p-6 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-2 text-highlight">Our Address</h3>
-                    <p className="text-gray-600">121004 Nariyala - Chhaensa Rd, Ballabhgarh, Chhainssa, Haryana</p>
+                    <p className="text-gray-600">C-186, Gali No-12, Roshan Nagar, Faridabad, Haryana-121003</p>
                 </div>
                 
                 <div className="bg-white p-6 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-2 text-highlight">Phone Number</h3>
-                    <p className="text-gray-600">+91- 99587 82489</p>
+                    <p className="text-gray-600">+91- 9582541315</p>
                 </div>
                
                 <div className="bg-white p-6 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-2 text-highlight">Email Address</h3>
-                    <p className="text-gray-600">info@krishisparsh.com</p>
+                    <p className="text-gray-600">liconelevator@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -80,10 +80,8 @@ const Contact = () => {
 			<div
 				className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-highlight rounded-2xl">
 				<div className="flex flex-col text-white">
-					<h1 className="font-bold uppercase text-4xl my-4">Drop in our office</h1>
-					<p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-						tincidunt arcu diam,
-						eu feugiat felis fermentum id. Curabitur vitae nibh viverra, auctor turpis sed, scelerisque ex.
+					{/* <h1 className="font-bold uppercase text-4xl my-4">Drop in our office</h1> */}
+					<p className="">Contact Licon Elevator for all inquiries, service requests, and support. Our team is ready to assist you promptly and professionally.
 					</p>
 
 					<div className="flex my-4 w-2/3 lg:w-1/2">
@@ -92,7 +90,7 @@ const Contact = () => {
             </div>
             <div className="flex flex-col">
               <h2 className="text-2xl">Main Office</h2>
-              <p className="">5555 Tailwind RD, Pleasant Grove, UT 73533</p>
+              <p className="">C-186, Gali No-12, Roshan Nagar, Faridabad, Haryana-121003</p>
             </div>
           </div>
           
@@ -100,18 +98,18 @@ const Contact = () => {
             <div className="flex flex-col">
               <i className="fas fa-phone-alt pt-2 pr-2" />
             </div>
-            <div className="flex flex-col">
-              <h2 className="text-2xl">Call Us</h2>
-              <p className="">Tel: xxx-xxx-xxx</p>
-              <p className="">Fax: xxx-xxx-xxx</p>
+            <div className="flex flex-col lg:w-full ">
+              <h2 className="text-2xl">Contact</h2>
+              <p className="">Tel: 9582541315</p>
+            
             </div>
           </div>
           
           <div className="flex my-4 w-2/3 lg:w-1/2 gap-2">
-            <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full  h-8 w-8  flex justify-center items-center   text-center">
+            <a href="#" target="_blank" rel="noreferrer" className="rounded-full  h-8 w-8  flex justify-center items-center   text-center">
             <FaFacebook />
             </a>
-            <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full  h-8 w-8  flex justify-center items-center   text-center">
+            <a href="#" target="_blank" rel="noreferrer" className="rounded-full  h-8 w-8  flex justify-center items-center   text-center">
             <FaFacebook />
             </a>
             

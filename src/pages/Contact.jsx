@@ -37,6 +37,7 @@ const Contact = () => {
           backgroundImage: 'linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.3)),url(https://images.unsplash.com/photo-1661438086338-38ba330de1b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
+          backgroundAttachment: 'fixed'
         }}>
             <div className="text-center text-white p-8">
                 <h2 className="text-3xl font-bold mb-4">Join Us Today!</h2>

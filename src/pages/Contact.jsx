@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 const Contact = () => {
   return (
     <>
-      <div className="relative bg-cover bg-center h-96 mt-12 ">
+      <div className="relative bg-cover bg-center h-96 mt-12 sm:mt-1">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative flex items-center justify-center h-full" style={{
           backgroundImage: 'linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.3)),url(https://blogthinkbig.com/wp-content/uploads/sites/4/2016/07/google-maps-trucos.jpg?fit=1920%2C1080)',

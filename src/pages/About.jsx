@@ -7,7 +7,7 @@ const About = () => {
   document.title='LE | About'
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   return (
-    <div className='w-full mt-12 '>
+    <div className='w-full mt-12 sm:mt-1 '>
         <section
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.5),rgba(0,0,0,.7)), url("/images/accelator.jpg")`,
@@ -18,7 +18,7 @@ const About = () => {
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        className='w-full sm:h-[60vh] h-32  text-white flex justify-center items-center'
+        className='w-full sm:h-[60vh] h-32  text-white flex justify-center items-center '
         >
 
           <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6 overflow-hidden'>

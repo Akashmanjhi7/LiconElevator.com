@@ -7,7 +7,7 @@ const About = () => {
   document.title='LE | About'
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   return (
-    <div className='w-full '>
+    <div className='w-full mt-12 '>
         <section
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.5),rgba(0,0,0,.7)), url("/images/accelator.jpg")`,
@@ -27,7 +27,7 @@ const About = () => {
             initial={{rotate:90 , y:"40%" ,opacity:0}}
             whileInView={{rotate:0, y:0 ,opacity:1}}
             viewport={{once:true}}
-            transition={{ease:[0.22,1,0.36,1], duration:1 }}
+            transition={{ duration:1 }}
             className='inline-block origin-left '
            > About <span className='text-highlight' > US</span></motion.sapn>
             
@@ -105,7 +105,7 @@ const About = () => {
         data-scoll data-scroll-speed=".5"
         >
             <div className='quote sm:text-[3vw] text-[2.2vh] font-semibold'>
-            <h1>With <span className='text-highlight'>Vision</span>, we see beyond boundaries. </h1>
+            <h1>With <span className='glow text-highlight'>Vision</span>, we see beyond boundaries. </h1>
             <h1>Through our <span className='text-highlight'>Mission</span>, we elevate every experience.</h1>
             <h1>Rooted in <span className='text-highlight'>Values</span>, we build the future one lift at a time.</h1>
             </div>

@@ -12,12 +12,12 @@ const Navbar = () => {
   
 
   return (
-    <header className="backdrop-blur-lg sticky top-0 bg-white w-full z-50">
+    <header  className="backdrop-blur-lg fixed top-0  w-full z-50">
       <motion.div 
         initial={{y:-100 , opacity: 0}}
         animate={{y:0 , opacity:1}}
         transition={{duration: 0.5}}
-      className="mx-auto max-w-screen-xl px-4 sm:px-0 ">
+      className="mx-auto max-w-screen-xl px-4 sticky top-0 sm:px-0 ">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <h1 className='font-black sm:text-[2vw] text-[2vh] uppercase text-highlight'>
@@ -84,7 +84,7 @@ const Navbar = () => {
         >
           <nav aria-label="Global">
             <ul className="flex flex-col items-center gap-4 text-[4vh]">
-              <li className='border-b-2'>
+              <li className=''>
                 <NavLink
                   className={({ isActive }) =>
                     `relative group   hover:text-highlight ${isActive ? 'text-highlight underline-active' : ''}`

@@ -48,4 +48,16 @@ width: 100%;
     left: 0;
     background-color: currentColor;
   }
+/* 
+  .glow {
+    color: #000; 
+    text-shadow: 
+      0 0 15px rgba(55, 149, 189, 0.5),
+      0 0 20px rgba(55, 149, 189, 0.5),
+      0 0 35px rgba(55, 149, 189, 0.5),
+      0 0 45px rgba(55, 149, 189, 0.5),
+      0 0 100px rgba(55, 149, 189, 0.5),
+      0 0 30px rgba(55, 149, 189, 0.5);
+  }
 
+  */

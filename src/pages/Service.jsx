@@ -94,7 +94,7 @@ const [elevators, setelevators] = useState(
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        className='w-full sm:h-[60vh] h-32  text-white flex justify-center items-center'
+        className='w-full sm:h-[60vh] h-32  text-white mt-12  flex justify-center items-center'
         >
 
           <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6 overflow-hidden'>

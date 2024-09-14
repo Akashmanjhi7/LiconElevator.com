@@ -12,7 +12,7 @@ const App = () => {
     <div className='overflow-x-hidden'>
       <Navbar/>
         {/* Routes */}
-
+<div className='h-[4vw]' ></div>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About/>} />

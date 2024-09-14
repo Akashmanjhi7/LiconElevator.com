@@ -20,8 +20,7 @@ const Home = () => {
      <Carasoule/>
    
     <section 
-    dataScroll
-    dataScrollSpeed="2.5 "
+   
     className='max-w-screen-xl mx-auto min-h-screen flex sm:flex-row flex-col items-center sm:justify-between '>
 
 {/* map */}
@@ -61,13 +60,13 @@ const Home = () => {
 <section className='mt-8 px-3 pb-20 sm:px-0 max-w-screen-xl mx-auto'>
 <h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4 mb-6  sm:py-8 px-6 overflow-hidden'>
             
-            <motion.sapn
+            <motion.span
              initial={{rotate:90 , y:"40%" ,opacity:0}}
              whileInView={{rotate:0, y:0 ,opacity:1}}
              viewport={{once:true}}
              transition={{ duration:0.6 }}
              className='inline-block origin-left '
-            > Our  <span className='text-highlight' > Clients </span></motion.sapn>
+            > Our  <span className='text-highlight' > Clients </span></motion.span>
              
              </h1>
 
@@ -84,13 +83,13 @@ const Home = () => {
     <section className=' mt-8 px-3 sm:px-0 max-w-screen-xl mx-auto'>
     <h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4 mb-6  sm:py-8 px-6 overflow-hidden'>
             
-            <motion.sapn
+            <motion.span
              initial={{rotate:90 , y:"40%" ,opacity:0}}
              whileInView={{rotate:0, y:0 ,opacity:1}}
              viewport={{once:true}}
              transition={{ duration:0.6 }}
              className='inline-block origin-left '
-            > Our  <span className='text-highlight' > Projects </span></motion.sapn>
+            > Our  <span className='text-highlight' > Projects </span></motion.span>
              
              </h1>
 
@@ -168,13 +167,13 @@ const Home = () => {
 
         <h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4  sm:py-8 px-6 overflow-hidden'>
             
-            <motion.sapn
+            <motion.span
              initial={{rotate:90 , y:"40%" ,opacity:0}}
              whileInView={{rotate:0, y:0 ,opacity:1}}
              viewport={{once:true}}
              transition={{ duration:0.6 }}
              className='inline-block origin-left '
-            > Our  <span className='text-highlight' > Gallery </span></motion.sapn>
+            > Our  <span className='text-highlight' > Gallery </span></motion.span>
              
              </h1>
 

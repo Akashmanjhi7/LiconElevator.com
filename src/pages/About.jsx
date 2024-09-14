@@ -25,7 +25,7 @@ const About = () => {
         <section className='overview max-w-screen-xl mx-auto mt-6 px-3 sm:px-0'>
           <h1 className='text-highlight sm:text-[3vw] text-[3vh] font-bold'>Overview</h1>
           <p className='sm:text-[1.6vw] text-[1.4vh]'>
-          LICON ELEVATORS was established in the year 1990 and is one of the fastest growing companies having in-house R&D and manufacturing facilities.
+          Licon Elevators offers cutting-edge, reliable elevator solutions with sleek designs and advanced technology for modern buildings.
           </p>
         </section>
 
@@ -34,7 +34,7 @@ const About = () => {
           <h1 className='text-highlight sm:text-[3vw] text-[3vh]  font-bold'>Who We Are?</h1>
           <div className='who-content flex flex-col gap-3 '>
           <p className='sm:text-[1.2vw] text-[1.4vh]'>
-          La Grazia, as a knowledge-based company is active in the field of the escalator, moving walk, and elevator. The goal of establishing this company was improving and upgrading the escalator industry to move towards a modern future.
+          Elevate your expectations with Licon Elevators! We specialize in top-tier elevator solutions, offering expert installation, maintenance, and repair services for both residential and commercial properties.
           </p>
 
           <p className='sm:text-[1.2vw] text-[1.4vh]'>
@@ -43,14 +43,13 @@ const About = () => {
 
 
           <p className='sm:text-[1.2vw] text-[1.4vh]'>
-          La Grazia team is constantly trying to identify the market needs to produce products that meet the discerning customers’ expectations. This company helps the architectural masterpieces glow more than ever with reliance on its expertise, knowledge, and ingenuity.
+          Our dedication to safety, efficiency, and innovative technology ensures smooth and reliable operations. From modern homes to bustling office buildings, trust Licon for exceptional performance, prompt service, and unmatched customer satisfaction. Discover the difference with Licon Elevators—where quality and reliability meet.
           </p>
 
-          <p className='sm:text-[1.2vw] text-[1.4vh]'>
-            La Grazia team is constantly trying to identify the market needs to produce products that meet the discerning customers’ expectations. This company helps the architectural masterpieces glow more than ever with reliance on its expertise, knowledge, and ingenuity.</p>
+        
 
           <p className='sm:text-[1.2vw] text-[1.4vh] '>
-            For more information about our team, please contact us at <a href='mailto:info@licon-elevators.com' className='text-highlight'>info@licon-elevators.com</a>.
+            For more information about our team, please contact us at <a href='mailto:info@licon-elevators.com' className='text-highlight'>liconelevator@gmail.com</a>.
           </p>
           </div>
         </section>
@@ -76,22 +75,24 @@ const About = () => {
         <section className='text-center flex flex-col gap-12 mt-8 px-3 sm:px-0'>
             <div className='vision'>
                   <h1 className='font-black sm:text-[3vw] text-[3vh] '>Our <span className='text-highlight'>Vision</span></h1>
-                  <p className='sm:text-[1.1vw] text-[1.1vh]'>We give people freedom to connect and thrive in a taller, faster, smarter world.</p>
+                  <p className='sm:text-[1.1vw] text-[1.1vh]'>Innovating elevator systems for a safer, smoother, and more efficient ride.</p>
             </div>
 
 
             <div className='mission'>
                   <h1 className='font-black sm:text-[3vw] text-[3vh] '>Our <span className='text-highlight'>Mission</span></h1>
-                  <p className='sm:text-[1.1vw] text-[1.1vh] '> To be a world-class, customer-centric, service-oriented company.</p>
+                  <p className='sm:text-[1.1vw] text-[1.1vh] '> Experience effortless vertical movement with Licon Elevators where technology meets reliability</p>
             </div>
 
 
             <div className='values'>
                   <h1 className='font-black sm:text-[3vw] text-[3vh] '>Our <span className='text-highlight'>Values</span></h1>
-                  <p className='sm:text-[1.1vw] text-[1.1vh]' >We put people at the center of everything we do.</p>
+                  {/* <p className='sm:text-[1.1vw] text-[1.1vh]' >We put people at the center of everything we do.</p>
                   <p className='sm:text-[1.1vw] text-[1.1vh]' >We are reliable, smart and focused on the future.</p>
                   <p className='sm:text-[1.1vw] text-[1.1vh]' >We are creating a more personal, connected world.</p>
-                  <p className='sm:text-[1.1vw] text-[1.1vh]' >We roll up our sleeves to get it done.</p>
+                  <p className='sm:text-[1.1vw] text-[1.1vh]' >We roll up our sleeves to get it done.</p> */}
+
+               <p className='sm:text-[1.1vw] text-[1.1vh]' >At Licon Elevators, our commitment to reliability and safety drives our innovative solutions, <br /> always ensuring a customer-focused approach to deliver unparalleled performance and peace of mind.</p> 
             </div>
         </section>
 

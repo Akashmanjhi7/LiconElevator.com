@@ -1,8 +1,10 @@
 import React from 'react'
-import Button from '../components/utils/Button'
+
 import Gallery from '../components/utils/Gallery'
+import { motion } from 'framer-motion'
 const About = () => {
   document.title='LE | About'
+
   return (
     <div className='w-full '>
         <section
@@ -18,12 +20,34 @@ const About = () => {
         className='w-full sm:h-[60vh] h-32  text-white flex justify-center items-center'
         >
 
-          <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6'>About <span className='text-highlight'> US</span></h1>
+          <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6 overflow-hidden'>
+            
+           <motion.sapn
+            initial={{rotate:90 , y:"40%" ,opacity:0}}
+            whileInView={{rotate:0, y:0 ,opacity:1}}
+            viewport={{once:true}}
+            transition={{ease:[0.22,1,0.36,1], duration:1 }}
+            className='inline-block origin-left '
+           > About <span className='text-highlight' > US</span></motion.sapn>
+            
+            </h1>
 
         </section>
 {/* Overview */}
         <section className='overview max-w-screen-xl mx-auto mt-6 px-3 sm:px-0'>
-          <h1 className='text-highlight sm:text-[3vw] text-[3vh] font-bold'>Overview</h1>
+        <h1 className='text-highlight sm:text-[3vw] text-[3vh] font-bold  overflow-hidden'>
+          
+  <motion.span
+    initial={{ x: 70, opacity: 0 }}
+    whileInView={{ x: 0,  opacity: 1 }}
+    viewport={{ once: true }}
+    transition={{  duration: 1}}
+    className='inline-block origin-left '
+  
+  >
+    Overview
+  </motion.span>
+</h1>
           <p className='sm:text-[1.6vw] text-[1.4vh]'>
           Licon Elevators offers cutting-edge, reliable elevator solutions with sleek designs and advanced technology for modern buildings.
           </p>

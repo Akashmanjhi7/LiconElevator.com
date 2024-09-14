@@ -4,6 +4,7 @@ import Button from '../components/utils/Button'
 import Gallery from '../components/utils/Gallery'
 import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive';
+import Work from '../components/Work'
 
 const Home = () => {
     
@@ -50,7 +51,22 @@ const Home = () => {
         </motion.div>
     </section>
 
-    <section className='gallery mt-8 px-3 sm:px-0'>
+{/* our Projects */}
+
+
+    <section className=' mt-8 px-3 sm:px-0 max-w-screen-xl mx-auto'>
+    <h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4 mb-6  sm:py-8 px-6 overflow-hidden'>
+            
+            <motion.sapn
+             initial={{rotate:90 , y:"40%" ,opacity:0}}
+             whileInView={{rotate:0, y:0 ,opacity:1}}
+             viewport={{once:true}}
+             transition={{ duration:0.6 }}
+             className='inline-block origin-left '
+            > Our  <span className='text-highlight' > Projects </span></motion.sapn>
+             
+             </h1>
+
 <motion.div
         initial={{x: isMobile?100 :1000, opacity: 0}} 
         whileInView={{x: 0, opacity: 1}}
@@ -116,6 +132,30 @@ const Home = () => {
         </motion.div>
         
     </section>
+
+
+
+    {/* Our Gallery */}
+
+        <section className='max-w-screen-xl mx-auto mt-8'>
+
+        <h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4  sm:py-8 px-6 overflow-hidden'>
+            
+            <motion.sapn
+             initial={{rotate:90 , y:"40%" ,opacity:0}}
+             whileInView={{rotate:0, y:0 ,opacity:1}}
+             viewport={{once:true}}
+             transition={{ duration:0.6 }}
+             className='inline-block origin-left '
+            > Our  <span className='text-highlight' > Gallery </span></motion.sapn>
+             
+             </h1>
+
+
+<Work/>
+        </section>
+
+
     </>
 
   )

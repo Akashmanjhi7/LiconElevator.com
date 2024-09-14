@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="md:flex md:items-center md:gap-12 ">
             {/* Desktop Menu */}
             <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex items-center gap-12 text-lg">
+              <ul className="flex items-center gap-12 text-lg font-semibold">
                 <li>
                   <NavLink
                     className={({ isActive }) =>
@@ -83,7 +83,7 @@ const Navbar = () => {
           }`}
         >
           <nav aria-label="Global">
-            <ul className="flex flex-col items-center gap-4 text-[4vh]">
+            <ul className="flex flex-col items-center gap-4 font-semibold  text-[4vh]">
               <li className=''>
                 <NavLink
                   className={({ isActive }) =>

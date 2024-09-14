@@ -71,16 +71,16 @@ const Navbar = () => {
 
         {/* Mobile Menu with Slide Animation */}
         <div
-          className={`md:hidden z-0 fixed right-0  bg-white px-10 py-8 transition-transform duration-300 overflow-x-hidden rounded-md transform ${
+          className={`md:hidden z-0 fixed right-0  bg-white px-10 border h-screen  py-12 transition-transform duration-300  rounded-md transform ${
             isMobileMenuOpen ? 'translate-x-0 ' : 'translate-x-[200%] '
           }`}
         >
           <nav aria-label="Global">
-            <ul className="flex flex-col items-center gap-4 text-lg">
-              <li>
+            <ul className="flex flex-col items-center gap-4 text-[4vh]">
+              <li className='border-b-2'>
                 <NavLink
                   className={({ isActive }) =>
-                    `relative group hover:text-highlight ${isActive ? 'text-highlight underline-active' : ''}`
+                    `relative group   hover:text-highlight ${isActive ? 'text-highlight underline-active' : ''}`
                   }
                   to="/"
                   onClick={() => setMobileMenuOpen(false)} // Close menu on click

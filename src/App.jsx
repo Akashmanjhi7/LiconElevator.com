@@ -9,7 +9,7 @@ import About from './pages/About'
 
 const App = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Navbar/>
         {/* Routes */}
 

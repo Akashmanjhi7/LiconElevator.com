@@ -6,8 +6,11 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Service from './pages/Service'
 import About from './pages/About'
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 const App = () => {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className='overflow-x-hidden'>
       <Navbar/>

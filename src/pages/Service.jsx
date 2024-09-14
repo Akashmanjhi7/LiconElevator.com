@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Card from '../components/utils/Card'
 import Aspect from '../components/utils/Aspect'
+import { motion } from 'framer-motion'
 
 const Service = () => {
    document.title='LE | Service'
@@ -96,7 +97,19 @@ const [elevators, setelevators] = useState(
         className='w-full sm:h-[60vh] h-32  text-white flex justify-center items-center'
         >
 
-          <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6'>Our <span className='text-highlight'> Services</span></h1>
+          <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6 overflow-hidden'>
+          <motion.sapn
+            initial={{rotate:90 , y:"40%" ,opacity:0}}
+            whileInView={{rotate:0, y:0 ,opacity:1}}
+            viewport={{once:true}}
+            transition={{duration:1 , easeInOut:true }}
+            className='inline-block origin-left '
+           > 
+             Our <span className='text-highlight' > Services</span></motion.sapn>
+            
+        
+            
+            </h1>
 
         </section>
 

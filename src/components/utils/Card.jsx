@@ -1,10 +1,19 @@
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const Card = ({img,head,sum}) => {
   return (
-    <div class="max-w-sm mx-auto rounded-lg shadow ">
+
+    <div className=' overflow-hidden'>
+    <motion.div 
+    initial={{y:90 , opacity: 0}}
+    whileInView={{y:0 , opacity: 1}}
+    transition={{duration:0.6}}
+    viewport={{once:true}}
+    
+    class="max-w-sm mx-auto rounded-lg shadow ">
     <Link href="#">
         <img class="rounded-t-lg" src={img} alt="image" loading='lazy' className='object-contain  '/>
     </Link>
@@ -15,6 +24,7 @@ const Card = ({img,head,sum}) => {
         <p class="mb-5 font-normal text-gray-700 dark:text-gray-400">{sum}</p>
         <Button text={"Enquiry Now"} link="/contact" />
     </div>
+</motion.div>
 </div>
   )
 }

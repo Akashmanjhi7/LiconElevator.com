@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Award, HardHat, Headset, PencilRuler, ShieldCheck, Users } from 'lucide-react';
 import React, { useState } from 'react';
 
@@ -44,7 +45,13 @@ const Aspect = () => {
   return (
     <div>
      
-      <section className='flex flex-wrap w-full'>
+      <motion.section 
+      initial={{opacity: 0 ,scale:0}}
+      whileInView={{opacity: 1, scale:1}}
+      transition={{ duration: 0.6 }}
+      viewport={{once: true}}
+
+      className='flex flex-wrap w-full'>
         {data.map((item, index) => {
           const Icon = item.icon; // Dynamically get the icon component
           return (
@@ -57,7 +64,7 @@ const Aspect = () => {
             </div>
           );
         })}
-      </section>
+      </motion.section>
     </div>
   );
 };

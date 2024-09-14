@@ -2,21 +2,42 @@ import React from 'react'
 import Carasoule from '../components/utils/Carasoule'
 import Button from '../components/utils/Button'
 import Gallery from '../components/utils/Gallery'
-
-
+import { motion } from 'framer-motion'
+import { useMediaQuery } from 'react-responsive';
 
 const Home = () => {
+    
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
      document.title='Licon Elevator'
   return (
-    <>   <Carasoule/>
-    <section className='max-w-screen-xl mx-auto min-h-screen flex sm:flex-row flex-col items-center sm:justify-between '>
+    <>  
+    
+     <Carasoule/>
+   
+    <section 
+    dataScroll
+    dataScrollSpeed="2.5 "
+    className='max-w-screen-xl mx-auto min-h-screen flex sm:flex-row flex-col items-center sm:justify-between '>
 
 {/* map */}
-        <div className='map sm:w-1/2 mt-6 sm:mt-0 '>
-            <img src="/images/india.svg" alt="" className='sm:p-20 px-4' />
-        </div>
+<motion.div
+        initial={{ x: isMobile ? "-10%" : "-50%", opacity: 0 }}
+        whileInView={{ x: "0", opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, }}
+        className='map sm:w-1/2 mt-6 sm:mt-0'
+      >
+    <img src="/images/india.svg" alt="" className='sm:p-20 px-4' />
+</motion.div>
+
 {/* content */}
-        <div className='content-box sm:w-1/2  px-3 sm:px-0 '>
+<motion.div
+        initial={{ x: isMobile ? "10%" : "50%", opacity: 0 }}
+        whileInView={{ x: "0", opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true,  }}
+        className='content-box sm:w-1/2 px-3 sm:px-0'
+      >
                 <div className='content flex flex-col gap-4 mb-6'>
 
               
@@ -26,35 +47,73 @@ const Home = () => {
 
             <Button text="Our Company" link="/about" />
 
-        </div>
+        </motion.div>
     </section>
 
     <section className='gallery mt-8 px-3 sm:px-0'>
-    <Gallery 
+<motion.div
+        initial={{x: isMobile?100 :1000, opacity: 0}} 
+        whileInView={{x: 0, opacity: 1}}
+        transition={{duration:0.9}}
+        viewport={{once:true}}
+        
+        >
+        <Gallery 
+        flex="flex-row" 
+        heading="We created an industry and changed the world" 
+        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
+        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        />
+</motion.div>
+
+<motion.div
+        initial={{x: isMobile?-100 : -1000, opacity: 0}} 
+        whileInView={{x: 0, opacity: 1}}
+        transition={{duration:0.9}}
+        viewport={{once:true}}
+        
+        >
+        <Gallery 
+        flex="flex-row-reverse" 
+        heading="We created an industry and changed the world" 
+        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
+        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        />
+
+</motion.div>
+
+<motion.div
+        initial={{x: isMobile?100 :1000, opacity: 0}} 
+        whileInView={{x: 0, opacity: 1}}
+        transition={{duration:0.9}}
+        viewport={{once:true}}
+        
+        >
+        <Gallery 
         flex="flex-row" 
         heading="We created an industry and changed the world" 
         sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
         img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
         />
 
-<Gallery 
+</motion.div>
+        
+
+        <motion.div
+        initial={{x: isMobile?-100 :-1000, opacity: 0}} 
+        whileInView={{x: 0, opacity: 1}}
+        transition={{duration:0.9}}
+        viewport={{once:true}}
+        
+        > 
+
+         <Gallery 
         flex="flex-row-reverse" 
         heading="We created an industry and changed the world" 
         sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
         img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
         />
-         <Gallery 
-        flex="flex-row" 
-        heading="We created an industry and changed the world" 
-        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
-        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
-        />
-         <Gallery 
-        flex="flex-row-reverse" 
-        heading="We created an industry and changed the world" 
-        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
-        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
-        />
+        </motion.div>
         
     </section>
     </>

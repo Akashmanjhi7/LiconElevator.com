@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
@@ -8,9 +9,15 @@ const Navbar = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  
+
   return (
     <header className="backdrop-blur-lg sticky top-0 bg-white w-full z-50">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-0">
+      <motion.div 
+        initial={{y:-100 , opacity: 0}}
+        animate={{y:0 , opacity:1}}
+        transition={{duration: 0.5}}
+      className="mx-auto max-w-screen-xl px-4 sm:px-0 ">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <h1 className='font-black sm:text-[2vw] text-[2vh] uppercase text-highlight'>
@@ -18,7 +25,7 @@ const Navbar = () => {
             </h1>
           </div>
 
-          <div className="md:flex md:items-center md:gap-12">
+          <div className="md:flex md:items-center md:gap-12 ">
             {/* Desktop Menu */}
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-12 text-lg">
@@ -105,7 +112,7 @@ const Navbar = () => {
             </ul>
           </nav>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
 };

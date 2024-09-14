@@ -1,10 +1,15 @@
 import { Carousel } from 'flowbite-react'
+import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 
 const Carasoule = () => {
    
   return (
-    <div className="sm:h-[91vh]  w-full relative  text-white">
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration:1.2}}
+    className="sm:h-[91vh]  w-full relative  text-white">
     <Carousel>
       <div className="relative">
         <img
@@ -53,12 +58,56 @@ const Carasoule = () => {
       </div>
     </Carousel>
     <div className='absolute sm:top-[10%] sm:left-[10%] sm:-translate-x-0 sm:-translate-y-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-t-4 border-b-4 sm:px-10 px-2 border-white text-[2.6vw] font-black sm:py-28 py-4'> 
-      <h1>Welcome to <span className='text-highlight'> Licon Elevator</span></h1>
-      <h1>We are Elevator manufacturer</h1>
-      <h1> Design-Installation-Maintenance</h1>
-      <h1>With 24×7 Support</h1>
+      <h1 className='overflow-hidden'>
+        <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >
+
+        Welcome to <span className='text-highlight'> Licon Elevator</span>
+        </motion.span>
+        
+        </h1>
+
+      <h1 className='overflow-hidden'>
+      <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >   
+        We are Elevator manufacturer
+        </motion.span>
+        </h1>
+      <h1 className='overflow-hidden'> 
+      <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >   
+        
+        Design-Installation-Maintenance
+        </motion.span>
+        </h1>
+      <h1 className='overflow-hidden'>
+      <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >   
+        With 24×7 Support
+        </motion.span>
+        </h1>
     </div>
-  </div>
+  </motion.div>
   
   )
 }

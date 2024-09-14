@@ -34,7 +34,10 @@ width: 100%;
 
 
 
-
+::selection{
+  background-color: #3795BD;
+  color: white;
+}
 
 
 

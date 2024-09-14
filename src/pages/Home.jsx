@@ -5,11 +5,15 @@ import Gallery from '../components/utils/Gallery'
 import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive';
 import Work from '../components/Work'
+import MarqueElem from '../components/utils/MarqueElem'
+
 
 const Home = () => {
     
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
      document.title='Licon Elevator'
+
+
   return (
     <>  
     
@@ -50,6 +54,29 @@ const Home = () => {
 
         </motion.div>
     </section>
+
+{     /* Our Clients */}
+
+
+<section className='mt-8 px-3 pb-20 sm:px-0 max-w-screen-xl mx-auto'>
+<h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4 mb-6  sm:py-8 px-6 overflow-hidden'>
+            
+            <motion.sapn
+             initial={{rotate:90 , y:"40%" ,opacity:0}}
+             whileInView={{rotate:0, y:0 ,opacity:1}}
+             viewport={{once:true}}
+             transition={{ duration:0.6 }}
+             className='inline-block origin-left '
+            > Our  <span className='text-highlight' > Clients </span></motion.sapn>
+             
+             </h1>
+
+          <MarqueElem/>
+           
+  
+  </section>
+
+
 
 {/* our Projects */}
 

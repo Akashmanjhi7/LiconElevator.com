@@ -98,14 +98,14 @@ const [elevators, setelevators] = useState(
         >
 
           <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6 overflow-hidden'>
-          <motion.sapn
+          <motion.span
           initial={{rotate:90 , y:"40%" ,opacity:0}}
           whileInView={{rotate:0, y:0 ,opacity:1}}
           viewport={{once:true}}
           transition={{ duration:1 }}
           className='inline-block origin-left '
            > 
-             Our <span className='text-highlight' > Services</span></motion.sapn>
+             Our <span className='text-highlight' > Services</span></motion.span>
             
         
             

@@ -23,13 +23,13 @@ const About = () => {
 
           <h1 className='sm:text-[4vw] text-[4vh]  font-bold border-t-4 border-b-4 py-4  sm:py-8 px-6 overflow-hidden'>
             
-           <motion.sapn
+           <motion.span
             initial={{rotate:90 , y:"40%" ,opacity:0}}
             whileInView={{rotate:0, y:0 ,opacity:1}}
             viewport={{once:true}}
             transition={{ duration:1 }}
             className='inline-block origin-left '
-           > About <span className='text-highlight' > US</span></motion.sapn>
+           > About <span className='text-highlight' > US</span></motion.span>
             
             </h1>
 
@@ -49,7 +49,7 @@ const About = () => {
     Overview
   </motion.span>
 </h1>
-          <p className='sm:text-[1.6vw] text-[1.4vh]'>
+          <p className='sm:text-[1.6vw] text-[1.8vh]'>
           Licon Elevators offers cutting-edge, reliable elevator solutions with sleek designs and advanced technology for modern buildings.
           </p>
         </section>
@@ -69,22 +69,22 @@ const About = () => {
   </motion.span>
             </h1>
           <div className='who-content flex flex-col gap-3 '>
-          <p className='sm:text-[1.3vw] text-[1.4vh]'>
+          <p className='sm:text-[1.3vw] text-[1.7vh]'>
           Elevate your expectations with Licon Elevators! We specialize in top-tier elevator solutions, offering expert installation, maintenance, and repair services for both residential and commercial properties.
           </p>
 
-          <p className='sm:text-[1.3vw] text-[1.4vh]'>
+          <p className='sm:text-[1.3vw] text-[1.7vh]'>
             Our team consists of experienced professionals with a passion for technology, design, and engineering. Our goal is to create a high-quality, efficient, and user-friendly product that will significantly contribute to the overall sustainability and convenience of our customers.
           </p>
 
 
-          <p className='sm:text-[1.3vw] text-[1.4vh]'>
+          <p className='sm:text-[1.3vw] text-[1.7vh]'>
           Our dedication to safety, efficiency, and innovative technology ensures smooth and reliable operations. From modern homes to bustling office buildings, trust Licon for exceptional performance, prompt service, and unmatched customer satisfaction. Discover the difference with Licon Elevators—where quality and reliability meet.
           </p>
 
         
 
-          <p className='sm:text-[1.3vw] text-[1.4vh] '>
+          <p className='sm:text-[1.3vw] text-[1.7vh] '>
             For more information about our team, please contact us at <a href='mailto:info@licon-elevators.com' className='text-highlight'>liconelevator@gmail.com</a>.
           </p>
           </div>
@@ -101,7 +101,7 @@ const About = () => {
           alignItems: 'center',
         
         }}
-        className='w-full sm:h-[60vh] h-32 mt-8  text-white flex justify-center items-center '
+        className='w-full sm:h-[60vh] h-40 pl-8 mt-8  text-white flex justify-center items-center '
 
         
         >
@@ -116,24 +116,24 @@ const About = () => {
         <section className='text-center flex flex-col gap-12 mt-8 px-3 sm:px-0'>
             <div className='vision'>
                   <h1 className='font-black sm:text-[3vw] text-[3vh] '>Our <span className='text-highlight'>Vision</span></h1>
-                  <p className='sm:text-[1.2vw] text-[1.1vh]'>Innovating elevator systems for a safer, smoother, and more efficient ride.</p>
+                  <p className='sm:text-[1.2vw] text-[1.6vh]'>Innovating elevator systems for a safer, smoother, and more efficient ride.</p>
             </div>
 
 
             <div className='mission'>
                   <h1 className='font-black sm:text-[3vw] text-[3vh] '>Our <span className='text-highlight'>Mission</span></h1>
-                  <p className='sm:text-[1.2vw] text-[1.1vh] '> Experience effortless vertical movement with Licon Elevators where technology meets reliability</p>
+                  <p className='sm:text-[1.2vw] text-[1.6vh] '> Experience effortless vertical movement with Licon Elevators where technology meets reliability</p>
             </div>
 
 
             <div className='values'>
                   <h1 className='font-black sm:text-[3vw] text-[3vh] '>Our <span className='text-highlight'>Values</span></h1>
-                  <p className='sm:text-[1.2vw] text-[1.1vh] italic ' >We put people at the center of everything we do.</p>
-                  <p className='sm:text-[1.2vw] text-[1.1vh] italic ' >We are reliable, smart and focused on the future.</p>
-                  <p className='sm:text-[1.2vw] text-[1.1vh] italic ' >We are creating a more personal, connected world.</p>
-                  <p className='sm:text-[1.2vw] text-[1.1vh] italic ' >We roll up our sleeves to get it done.</p>
+                  <p className='sm:text-[1.2vw] text-[1.6vh] italic ' >We put people at the center of everything we do.</p>
+                  <p className='sm:text-[1.2vw] text-[1.6vh] italic ' >We are reliable, smart and focused on the future.</p>
+                  <p className='sm:text-[1.2vw] text-[1.6vh] italic ' >We are creating a more personal, connected world.</p>
+                  <p className='sm:text-[1.2vw] text-[1.6vh] italic ' >We roll up our sleeves to get it done.</p>
 
-               <p className='sm:text-[1.2vw] text-[1.1vh] pt-4' >At Licon Elevators, our commitment to reliability and safety drives our innovative solutions, <br /> always ensuring a customer-focused approach to deliver unparalleled performance and peace of mind.</p> 
+               <p className='sm:text-[1.2vw] text-[1.6vh] pt-4' >At Licon Elevators, our commitment to reliability and safety drives our innovative solutions, <br /> always ensuring a customer-focused approach to deliver unparalleled performance and peace of mind.</p> 
             </div>
         </section>
 
@@ -141,13 +141,13 @@ const About = () => {
 
         <h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4   sm:py-8 px-6 overflow-hidden'>
             
-            <motion.sapn
+            <motion.span
              initial={{rotate:90 , y:"40%" ,opacity:0}}
              whileInView={{rotate:0, y:0 ,opacity:1}}
              viewport={{once:true}}
              transition={{ duration:0.6 }}
              className='inline-block origin-left '
-            > Our  <span className='text-highlight' > Projects </span></motion.sapn>
+            > Our  <span className='text-highlight' > Projects </span></motion.span>
              
              </h1>
         <motion.div

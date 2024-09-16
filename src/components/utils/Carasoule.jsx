@@ -57,7 +57,7 @@ const Carasoule = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/50"></div>
       </div>
     </Carousel>
-    <div className='absolute sm:top-[10%] sm:left-[10%] sm:-translate-x-0 sm:-translate-y-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-t-4 border-b-4 sm:px-10 px-2 border-white text-[2.6vw] font-black sm:py-28 py-4'> 
+    <div className='absolute w-[80%] sm:w-1/2  sm:top-[10%] sm:left-[10%] sm:-translate-x-0 sm:-translate-y-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-t-4 border-b-4 sm:px-10 px-2 border-white text-[4.6vw] sm:text-[2.6vw] font-black sm:py-28 py-4'> 
       <h1 className='overflow-hidden'>
         <motion.span
         initial={{rotate:90 , y:"40%" ,opacity:0}}

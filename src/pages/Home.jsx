@@ -25,7 +25,7 @@ const Home = () => {
 
 {/* map */}
 <motion.div
-        initial={{ x: isMobile ? "-10%" : "-50%", opacity: 0 }}
+        initial={{ x: isMobile ? "-10%" : "-80%", opacity: 0 }}
         whileInView={{ x: "0", opacity: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, }}

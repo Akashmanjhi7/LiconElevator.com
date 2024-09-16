@@ -11,7 +11,7 @@ const [data, setData] = useState([
     "id": 1,
     "heading": "Elevator Installation",
     "image": "/service/install.jpg",
-    "summary": "Reliable elevator installation services that enhance safety, efficiency, and modern design in every building."
+    "summary": "Professional elevator installation ensuring safety, efficiency, and modern design solutions."
   },
   {
     "id": 2,
@@ -35,13 +35,13 @@ const [data, setData] = useState([
     "id": 5,
     "heading": "Elevator Inspection",
     "image": "/service/Elevator-Inspection.jpeg",
-    "summary": "Ensure elevator safety with our detailed inspection services. Reliable checks for optimal performance"
+    "summary": "Thorough elevator inspections for safety, reliability, and optimal performance assurance."
   },
   {
     "id": 6,
     "heading": "Custom Elevator Solutions",
     "image": "/service/Elevator-Solutions.jpeg",
-    "summary": "Custom elevator solutions designed for optimal performance, safety, and aesthetic integration in any building."
+    "summary": "Elevator solutions that prioritize customer needs, safety, and modern trends."
   }
 ]
 )
@@ -50,17 +50,17 @@ const [elevators, setelevators] = useState(
   [
     {
       "type": "Passenger Elevators",
-      "description": "With modern passenger elevators, enjoy reliable and quiet movement between levels, ensuring safety, accessibility, and a touch of elegance in every ride.",
+      "description": "Elevate your journey with our smooth, reliable passenger elevators—comfort, safety, and efficiency in every ride.",
       "image": "/service/persnol.jpeg"
     },
     {
       "type": "Home Elevators",
-      "description": "Transform your home with our elegant elevators, offering easy floor-to-floor access and adding both value and accessibility to your home.",
+      "description": "Elevate your home with style and convenience. Our sleek, reliable home elevators add luxury and ease to any space.",
       "image": "/service/home.jpeg"
     },
     {
       "type": "Goods Elevators",
-      "description": "Streamline your operations with our advanced goods elevators. Built for strength and efficiency, they enhance workflow and manage large loads effortlessly.",
+      "description": "Efficiently move heavy items with our reliable goods elevator—designed for durability, safety, and smooth operation.",
       "image": "/service/goods.jpg"
     },
     {

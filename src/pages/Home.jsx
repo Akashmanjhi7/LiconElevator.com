@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { useMediaQuery } from 'react-responsive';
 import Work from '../components/Work'
 import MarqueElem from '../components/utils/MarqueElem'
+import Review from '../components/utils/Review'
 
 
 const Home = () => {
@@ -181,6 +182,22 @@ const Home = () => {
 <Work/>
         </section>
 
+{/* testimonail */}
+    <section className="max-w-screen-xl mx-auto mt-8 px-3 sm:px-0">
+      <h1 className="sm:text-[4vw] text-[4vh] font-bold py-4 sm:py-8 px-6 overflow-hidden">
+        <motion.span
+          initial={{ rotate: 90, y: "40%", opacity: 0 }}
+          whileInView={{ rotate: 0, y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="inline-block origin-left"
+        >
+          Our <span className="text-highlight">Testimonials</span>
+        </motion.span>
+      </h1>
+
+    <Review/>
+    </section>
 
     </>
 

@@ -99,10 +99,11 @@ const About = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+        
         }}
         className='w-full sm:h-[60vh] h-32 mt-8  text-white flex justify-center items-center '
 
-        data-scoll data-scroll-speed=".5"
+        
         >
             <div className='quote sm:text-[3vw] text-[2.2vh] font-semibold'>
             <h1>With <span className='glow text-highlight'>Vision</span>, we see beyond boundaries. </h1>
@@ -136,8 +137,20 @@ const About = () => {
             </div>
         </section>
 
-        <section className='gallery mt-8 px-3 sm:px-0'>
-<motion.div
+        <section className=' mt-8 px-3 sm:px-0 max-w-screen-xl  mx-auto' >
+
+        <h1 className='sm:text-[4vw] text-[4vh]  font-bold  py-4   sm:py-8 px-6 overflow-hidden'>
+            
+            <motion.sapn
+             initial={{rotate:90 , y:"40%" ,opacity:0}}
+             whileInView={{rotate:0, y:0 ,opacity:1}}
+             viewport={{once:true}}
+             transition={{ duration:0.6 }}
+             className='inline-block origin-left '
+            > Our  <span className='text-highlight' > Projects </span></motion.sapn>
+             
+             </h1>
+        <motion.div
         initial={{x: isMobile?100 :1000, opacity: 0}} 
         whileInView={{x: 0, opacity: 1}}
         transition={{duration:0.9}}

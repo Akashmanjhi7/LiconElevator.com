@@ -14,8 +14,7 @@ const Footer = () => {
         <p
           className="max-w-md mx-auto mt-6 leading-relaxed text-center  sm:max-w-xs sm:mx-0 sm:text-left"
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+         Contact Licon Elevator today for expert elevator solutions. Reach us for installations, maintenance, and repairs
         </p>
 
         <ul className="flex justify-center gap-6 mt-8 md:gap-8 sm:justify-start">
@@ -138,31 +137,27 @@ const Footer = () => {
         className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
       >
         <div className="text-center sm:text-left">
-          <p className="text-lg font-medium text-highlight">About Us</p>
+          <p className="text-lg font-medium text-highlight">Helpful Links</p>
 
           <nav className="mt-8">
             <ul className="space-y-4 text-sm">
-              <li>
-                <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Company History
+             
+
+           <li>
+                <a className="text-highlight transition hover:text-highlight/75" href="/about">
+                  About
                 </a>
               </li>
 
               <li>
-                <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Meet the Team
+                <a className="text-highlight transition hover:text-highlight/75" href="/service">
+                  Service
                 </a>
               </li>
 
               <li>
-                <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Employee Handbook
-                </a>
-              </li>
-
-              <li>
-                <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Careers
+                <a className="text-highlight transition hover:text-highlight/75" href="/contact">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -176,25 +171,31 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li>
                 <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Web Development
+                  Elevator Installation
                 </a>
               </li>
 
               <li>
                 <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Web Design
+                 Elevator Maintenance
                 </a>
               </li>
 
               <li>
                 <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Marketing
+                Elevator Modernization
                 </a>
               </li>
 
               <li>
                 <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Google Ads
+                Elevator Inspection
+                </a>
+              </li>
+
+              <li>
+                <a className="text-highlight transition hover:text-highlight/75" href="/">
+                Emergency Repair services
                 </a>
               </li>
             </ul>
@@ -202,39 +203,21 @@ const Footer = () => {
         </div>
 
         <div className="text-center sm:text-left">
-          <p className="text-lg font-medium text-highlight">Helpful Links</p>
+          <p className="text-lg font-medium text-highlight">Legal Links</p>
 
           <nav className="mt-8">
             <ul className="space-y-4 text-sm">
+             
+
               <li>
                 <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  FAQs
+                  Privacy and Policy
                 </a>
               </li>
 
               <li>
                 <a className="text-highlight transition hover:text-highlight/75" href="/">
-                  Support
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="flex group justify-center sm:justify-start gap-1.5"
-                  href="/"
-                >
-                  <span className="text-highlight transition group-hover:text-highlight/75">
-                    Live Chat
-                  </span>
-
-                  <span className="relative flex w-2 h-2 -mr-2">
-                    <span
-                      className="absolute inline-flex w-full h-full bg-teal-400 rounded-full opacity-75 animate-ping"
-                    ></span>
-                    <span
-                      className="relative inline-flex w-2 h-2 bg-teal-500 rounded-full"
-                    ></span>
-                  </span>
+                  Careers
                 </a>
               </li>
             </ul>
@@ -266,7 +249,7 @@ const Footer = () => {
                 </svg>
 
                 <span className="text-highlight transition group-hover:text-highlight/75">
-                  john@doe.com
+                liconelevator@gmail.com
                 </span>
               </a>
             </li>
@@ -292,7 +275,7 @@ const Footer = () => {
                 </svg>
 
                 <span className="text-highlight transition group-hover:text-highlight/75">
-                  0123456789
+                  9582541315
                 </span>
               </a>
             </li>
@@ -321,7 +304,7 @@ const Footer = () => {
               </svg>
 
               <address className="-mt-0.5 not-italic text-highlight">
-                213 Lane, London, United Kingdom
+                C-186, Gali No-12, Roshan Nagar, faridabad, Haryana-121003
               </address>
             </li>
           </ul>
@@ -352,7 +335,7 @@ const Footer = () => {
         </p>
 
         <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-          &copy; 2022 Company Name
+          &copy; 2024 Licon Elevator
         </p>
       </div>
     </div>

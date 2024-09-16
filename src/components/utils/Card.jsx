@@ -3,7 +3,7 @@ import Button from './Button';
 import React from 'react'
 import { motion } from 'framer-motion';
 
-const Card = ({img,head,sum}) => {
+const  Card = ({img,head,sum}) => {
   return (
 
     <div className=' overflow-hidden'>
@@ -13,9 +13,9 @@ const Card = ({img,head,sum}) => {
     transition={{duration:0.6}}
     viewport={{once:true}}
     
-    class="max-w-sm mx-auto rounded-lg shadow ">
-    <Link href="#">
-        <img class="rounded-t-lg" src={img} alt="image" loading='lazy' className='object-contain  '/>
+    class="max-w-sm mx-auto rounded-lg border h-auto shadow sm:min-h-[63vh] overflow-hidden ">
+    <Link href="#" className='h-1/2 overflow-hidden'>
+        <img class="rounded-t-lg" src={img} alt="image" loading='lazy' className='object-cover  '/>
     </Link>
     <div class="p-5">
         <a href="#">

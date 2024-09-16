@@ -31,19 +31,20 @@ const Contact = () => {
             </div>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
               <input className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" placeholder="First Name*" />
+                type="text" name='First_Name' required placeholder="First Name*" />
               <input className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" placeholder="Last Name*" />
+                type="text" name='Last_Name' required placeholder="Last Name*" />
+
               <input className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="email" placeholder="Email*" />
+                type="email" name='Email' required placeholder="Email*" />
               <input className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="number" placeholder="Phone*" />
+                type="number" name='Phone' required placeholder="Phone*" />
             </div>
             <div className="my-4">
-              <textarea placeholder="Message*" className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+              <textarea placeholder="Message*" name='Message' required className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
             </div>
             <div className="my-2 w-1/2 lg:w-1/4">
-              <button className="uppercase text-sm font-bold tracking-wide bg-highlight text-gray-100 p-3 rounded-lg w-full 
+              <button type='submit' className="uppercase text-sm font-bold tracking-wide bg-highlight text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline">
                 Send Message
               </button>

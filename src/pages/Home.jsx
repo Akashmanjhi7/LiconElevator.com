@@ -20,7 +20,7 @@ const Home = () => {
     
      
 
-    <section className="mt-12 relative w-full sm:h-screen h-80 aspect-auto">
+    <section className="mt-12 sm:mt-0 relative w-full sm:h-screen h-80 aspect-auto">
   {/* Video Background */}
         <video 
           autoPlay 

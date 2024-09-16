@@ -34,7 +34,7 @@ const Home = () => {
         </video>
 
   {/* Black Transparent Gradient */}
-        <div className="absolute top-0 left-0 w-full sm:h-full bg-gradient-to-b from-black/50 to-black/50"></div>
+        <div className="absolute top-0 left-0 w-full sm:h-full bg-gradient-to-b from-black/60 to-black/60"></div>
 
         {/* Content */}
         <div className='absolute  w-[80%] sm:w-1/2  sm:top-[10%] sm:left-[10%] sm:-translate-x-0 sm:-translate-y-0 mt-36 sm:mt-0 left-1/2 -translate-x-1/2 -translate-y-1/2 border-t-4 border-b-4 sm:px-10 px-2 border-white text-white text-[3.6vw] sm:text-[2.6vw] font-black sm:py-28 py-4'> 

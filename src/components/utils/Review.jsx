@@ -38,8 +38,8 @@ const Review = () => {
 <>
 <div className="flex flex-wrap gap-4">
 {
-    review.map((review)=>(
-        <div className="sm:w-[32%] bg-zinc-200 shadow-lg rounded-lg overflow-hidden">
+    review.map((review,id)=>(
+        <div key={id} className="sm:w-[32%] bg-zinc-200 shadow-lg rounded-lg overflow-hidden">
           <div className="px-4 py-6">
             <div className="flex items-center">
               <img

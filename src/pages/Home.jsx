@@ -18,7 +18,77 @@ const Home = () => {
   return (
     <>  
     
-     <Carasoule/>
+     
+
+    <section className="mt-12 sm:mt-0 relative w-full sm:h-screen h-80 aspect-auto">
+  {/* Video Background */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          className="absolute top-0 left-0 w-full sm:h-full object-cover"
+        >
+          <source src="/videos/Liconelevator.mp4" type="video/mp4" />
+          {/* Fallback content if video is not supported */}
+          Your browser does not support the video tag.
+        </video>
+
+  {/* Black Transparent Gradient */}
+        <div className="absolute top-0 left-0 w-full sm:h-full bg-gradient-to-b from-black/50 to-black/50"></div>
+
+        {/* Content */}
+        <div className='absolute  w-[80%] sm:w-1/2  sm:top-[10%] sm:left-[10%] sm:-translate-x-0 sm:-translate-y-0 mt-36 sm:mt-0 left-1/2 -translate-x-1/2 -translate-y-1/2 border-t-4 border-b-4 sm:px-10 px-2 border-white text-white text-[3.6vw] sm:text-[2.6vw] font-black sm:py-28 py-4'> 
+      <h1 className='overflow-hidden'>
+        <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >
+
+        Welcome to <span className='text-highlight'> Licon Elevator</span>
+        </motion.span>
+        
+        </h1>
+
+      <h1 className='overflow-hidden'>
+      <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >   
+        We are Elevator manufacturer
+        </motion.span>
+        </h1>
+      <h1 className='overflow-hidden'> 
+      <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >   
+        
+        Design-Installation-Maintenance
+        </motion.span>
+        </h1>
+      <h1 className='overflow-hidden'>
+      <motion.span
+        initial={{rotate:90 , y:"40%" ,opacity:0}}
+        whileInView={{rotate:0, y:0 ,opacity:1}}
+        viewport={{once:true}}
+        transition={{ease:[0.22,1,0.36,1] , duration:1.3}}
+        className='inline-block origin-left'
+        >   
+        With 24×7 Support
+        </motion.span>
+        </h1>
+    </div>
+</section>
+
    
     <section 
    

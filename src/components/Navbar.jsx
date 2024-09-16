@@ -12,7 +12,7 @@ const Navbar = () => {
   
 
   return (
-    <header  className="backdrop-blur-lg fixed top-0 bg-white w-full z-50">
+    <header  className="backdrop-blur-lg fixed top-0  bg-white w-full z-50">
       <motion.div 
         initial={{y:-100 , opacity: 0}}
         animate={{y:0 , opacity:1}}

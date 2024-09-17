@@ -193,39 +193,6 @@ const Home = () => {
         />
 
 </motion.div>
-
-<motion.div
-        initial={{x: isMobile?100 :1000, opacity: 0}} 
-        whileInView={{x: 0, opacity: 1}}
-        transition={{duration:0.9}}
-        viewport={{once:true}}
-        
-        >
-        <Gallery 
-        flex="flex-row" 
-        heading="We created an industry and changed the world" 
-        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
-        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
-        />
-
-</motion.div>
-        
-
-        <motion.div
-        initial={{x: isMobile?-100 :-1000, opacity: 0}} 
-        whileInView={{x: 0, opacity: 1}}
-        transition={{duration:0.9}}
-        viewport={{once:true}}
-        
-        > 
-
-         <Gallery 
-        flex="flex-row-reverse" 
-        heading="We created an industry and changed the world" 
-        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
-        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
-        />
-        </motion.div>
         
     </section>
 

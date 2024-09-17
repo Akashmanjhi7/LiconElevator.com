@@ -1,5 +1,4 @@
 import React from 'react'
-import Carasoule from '../components/utils/Carasoule'
 import Button from '../components/utils/Button'
 import Gallery from '../components/utils/Gallery'
 import { motion } from 'framer-motion'

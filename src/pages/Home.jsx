@@ -124,6 +124,22 @@ const Home = () => {
         </motion.div>
     </section>
 
+    <div className="relative bg-cover bg-center h-96 mt-12 sm:mt-1">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative flex items-center justify-center h-full" style={{
+          backgroundImage: 'linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.3)),url(https://cdn.pixabay.com/photo/2017/09/06/15/02/elevator-2721828_640.jpg)',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed'
+        }}>
+          <div className="text-center text-white p-8">
+            <h2 className="text-3xl font-bold mb-4">Join Us Today!</h2>
+            <p className="mb-6 font-bold">Flexible service solutions to suit you - from basic maintenance to a fully comprehensive plan..</p>
+
+          </div>
+        </div>
+      </div>
+
 {     /* Our Clients */}
 
 
@@ -173,8 +189,8 @@ const Home = () => {
         <Gallery 
         flex="flex-row" 
         heading="We created an industry and changed the world" 
-        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
-        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        sum="Our team expertly designed and installed a cutting-edge elevator, significantly improving accessibility and efficiency within the building. This project enhances user experience while ensuring safety and compliance with all regulations."
+        img="https://cdn.pixabay.com/photo/2017/09/06/15/02/elevator-2721828_1280.jpg"
         />
 </motion.div>
 
@@ -188,8 +204,8 @@ const Home = () => {
         <Gallery 
         flex="flex-row-reverse" 
         heading="We created an industry and changed the world" 
-        sum="Otis is an iconic brand with a rich history. Few companies can claim a greater role in creating our connected urban world. We've helped build cities, transformed how people live and work and revolutionized architecture itself."
-        img="https://omuscmslfrpcdn03.azureedge.net/documents/256045/3900859/Otis.com_history_box_callout_image_OurCompany.jpg/94f59ca8-5ae1-64ba-c227-ced5075e1344?t=1643718548324"
+        sum="We specialize in providing top-tier elevator services that prioritize safety, efficiency, and reliability. Our comprehensive maintenance plans are designed to extend the life of your elevators, ensuring they operate smoothly and with minimal downtime. Our highly trained technicians are available for rapid response repairs, tackling issues quickly to enhance safety for all users."
+        img="https://cdn.pixabay.com/photo/2018/02/03/11/02/gallery-3127412_960_720.jpg"
         />
 
 </motion.div>
@@ -233,6 +249,7 @@ const Home = () => {
       </h1>
 
     <Review/>
+ 
     </section>
 
     </>
